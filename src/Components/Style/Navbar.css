@@ -1,0 +1,103 @@
+.Navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+
+    
+  }
+ .nn1 a{
+  font-family: Mazzard1;
+  font-size: 41.15px;
+  color: #000;
+ }
+  .NavbarInner{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .NavbarInner ul{
+    display: flex;
+    list-style-type: none;
+  }
+  .NavbarInner ul li{
+    margin-left: 50px;
+    font-family: Mazzard1;
+    font-size: 20px;
+  }
+  
+  .NavbarInner ul li a{
+    color: #000;
+  }
+  .Hamburger{
+    display: none;
+  }
+  
+  @media (max-width : 1100px) {
+    .nn1 img{
+      width: 160px;
+      height: 36px;
+    }
+    .Hamburger{
+      display: block;
+    }
+    .NavbarInner ul{
+  display: none;
+    }
+    .NavbarMobile{
+        margin-top: -3vh;
+     /* position: absolute; */
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      right: 0;
+      width: 80%;
+      height: 100vh;
+      overflow: hidden;
+      background-color:white;
+      color: black;
+      animation-name: HamburgerMenu;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 1;
+      z-index: 99999;
+
+    }
+    .NavbarMobile ul li a{
+      color: #000;
+    }
+    @keyframes HamburgerMenu {
+      0%{
+        transform: translateX(500px);
+      }
+      100%{
+        transform: translateX(0);
+      }
+    }
+    .NavbarMobile ul{
+      list-style: none;
+      margin-top: 50px;
+    }
+    .NavbarMobile ul li{
+      margin-top: 30px;
+      font-family: Mazzard1;
+      font-size: 20px;
+    }
+    .Hamburger2{
+      margin-top: 20px;
+      margin-right:20px;
+      /* border: 1px solid red; */
+  }
+
+  }
+  @media (max-width : 1100px) {
+
+  .nn1 a{
+    font-family: Mazzard1;
+    font-size:30px;
+    color: #000;
+   }
+  }
